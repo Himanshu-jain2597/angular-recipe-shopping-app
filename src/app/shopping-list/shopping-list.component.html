@@ -1,7 +1,14 @@
 <div class="row">
   <div class="col-xs-10">
     <app-shopping-edit></app-shopping-edit>
-    <hr>
-    <p>the list </p>
+    <hr />
+    <div class="list-group">
+      <a
+        class="list-group-item"
+        *ngFor = "let ingerident of ingeridents"
+      >
+      {{ingerident.name}}-{{ingerident.amount}}
+      </a>
+    </div>
   </div>
 </div>
