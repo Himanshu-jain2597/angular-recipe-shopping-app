@@ -7,7 +7,7 @@ import { RecipeService } from '../recipes.service';
   templateUrl: './recipe-list.component.html',
 })
 export class RecipeListComponent implements OnInit {
- @Output() recipeWasSelected =  new EventEmitter<Recipe>();
+ // @Output() recipeWasSelected =  new EventEmitter<Recipe>();
     recipes:Recipe[];
   // recipes:Recipe[] = [
   //   new Recipe('A test recipe','This is simply a test','https://images.pexels.com/photos/4737039/pexels-photo-4737039.jpeg?cs=srgb&dl=pexels-adriano-brodbeck-4737039.jpg&fm=jpg'),
@@ -21,9 +21,9 @@ export class RecipeListComponent implements OnInit {
 
   }
 
-  onRecipeSelected(recipe:Recipe) {
+  // onRecipeSelected(recipe:Recipe) {
 
-    this.recipeWasSelected.emit(recipe);
-  }
+  //   this.recipeWasSelected.emit(recipe);
+  // }
 
 }
