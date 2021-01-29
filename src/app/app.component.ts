@@ -5,5 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = "recipe-shopping"
+  loadedFeature="recipe"
+  onNavigate(feature:string) {
+    this.loadedFeature = feature;
+
+  }
+
 }
